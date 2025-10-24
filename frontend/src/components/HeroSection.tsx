@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Users, Star, DollarSign, TrendingUp } from 'lucide-react';
+import Image from 'next/image';
 
 export default function HeroSection() {
   const containerVariants = {
@@ -109,10 +110,16 @@ export default function HeroSection() {
           }}
         >
           <div className="product-card bg-white/90 backdrop-blur-sm rounded-2xl p-1 shadow-2xl border border-white/20 w-48">
-            <div 
-              className="w-full h-24 rounded-lg bg-cover bg-center"
-              style={{ backgroundImage: `url(${product.image})` }}
-            ></div>
+            <div className="w-full h-24 rounded-lg overflow-hidden">
+              <Image
+                src={product.image}
+                alt={`Produto ${product.id}`}
+                width={192}
+                height={96}
+                className="w-full h-full object-cover"
+                priority={index < 2}
+              />
+            </div>
           </div>
         </motion.div>
       ))}

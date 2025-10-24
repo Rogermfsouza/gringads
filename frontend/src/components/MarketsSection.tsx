@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Globe, DollarSign, TrendingUp } from 'lucide-react';
+import Image from 'next/image';
 
 export default function MarketsSection() {
   const ref = useRef(null);
@@ -137,15 +138,16 @@ export default function MarketsSection() {
     <section id="mercados" className="py-20 bg-gray-50 relative overflow-hidden">
       {/* Foguete Background */}
       <div className="absolute inset-0 right-0 w-full h-full z-0">
-        <div 
-          className="absolute right-0 top-0 w-full h-full bg-cover bg-right bg-no-repeat opacity-8"
-          style={{
-            backgroundImage: 'url(/images/foguete.png)',
-            backgroundSize: 'contain',
-            backgroundPosition: 'right center',
-            transform: 'translateX(30%)'
-          }}
-        />
+        <div className="absolute right-0 top-0 w-full h-full opacity-8">
+          <Image
+            src="/images/foguete.png"
+            alt="Foguete de fundo"
+            fill
+            className="object-contain object-right"
+            style={{ transform: 'translateX(30%)' }}
+            priority={false}
+          />
+        </div>
       </div>
 
       {/* Static Background Elements */}

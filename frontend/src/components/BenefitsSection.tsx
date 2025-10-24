@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { CheckCircle, Shield, Zap, Target, Users, Award } from 'lucide-react';
+import Image from 'next/image';
 
 export default function BenefitsSection() {
   const ref = useRef(null);
@@ -112,13 +113,12 @@ export default function BenefitsSection() {
     <section className="py-20 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <div 
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/images/mapa.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
+        <Image
+          src="/images/mapa.png"
+          alt="Mapa de fundo"
+          fill
+          className="object-cover"
+          priority={false}
         />
         {/* Overlay para melhorar legibilidade */}
         <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" />
