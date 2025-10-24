@@ -74,7 +74,7 @@ export default function BenefitsSection() {
         ease: "easeOut"
       }
     }
-  };
+  } as const;
 
   const cardVariants = {
     hidden: { 
@@ -91,7 +91,7 @@ export default function BenefitsSection() {
         ease: "easeOut"
       }
     }
-  };
+  } as const;
 
   const iconVariants = {
     hidden: { 

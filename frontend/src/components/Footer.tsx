@@ -29,7 +29,7 @@ export default function Footer() {
         ease: "easeOut"
       }
     }
-  };
+  } as const;
 
   const socialIcons = [
     { icon: Facebook, href: '#', color: 'hover:text-blue-400' },
