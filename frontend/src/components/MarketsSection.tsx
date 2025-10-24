@@ -80,7 +80,7 @@ export default function MarketsSection() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: [0.25, 0.46, 0.45, 0.94]
       }
     }
   } as const;
@@ -97,7 +97,7 @@ export default function MarketsSection() {
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: [0.25, 0.46, 0.45, 0.94]
       }
     }
   } as const;
@@ -112,10 +112,10 @@ export default function MarketsSection() {
       rotate: 0,
       transition: {
         duration: 0.6,
-        ease: "backOut"
+        ease: [0.68, -0.55, 0.265, 1.55]
       }
     }
-  };
+  } as const;
 
   const statsVariants = {
     hidden: { 
@@ -127,11 +127,11 @@ export default function MarketsSection() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "backOut",
+        ease: [0.68, -0.55, 0.265, 1.55],
         delay: 0.3
       }
     }
-  };
+  } as const;
 
   return (
     <section id="mercados" className="py-20 bg-gray-50 relative overflow-hidden">
@@ -174,7 +174,7 @@ export default function MarketsSection() {
                 transition={{
                   duration: 3,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: [0.4, 0, 0.2, 1]
                 }}
                 style={{
                   background: 'linear-gradient(90deg, #22c55e, #16a34a, #15803d, #22c55e)',
@@ -226,7 +226,7 @@ export default function MarketsSection() {
                 transition={{
                   duration: 4,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: [0.4, 0, 0.2, 1]
                 }}
               />
 
@@ -250,7 +250,7 @@ export default function MarketsSection() {
                       transition={{
                         duration: 2,
                         repeat: Infinity,
-                        ease: "linear"
+                        ease: [0, 0, 1, 1]
                       }}
                     />
                     <market.icon className="w-8 h-8 text-white relative z-10" />
@@ -321,7 +321,7 @@ export default function MarketsSection() {
                         transition={{
                           duration: 2,
                           repeat: Infinity,
-                          ease: "easeInOut",
+                          ease: [0.4, 0, 0.2, 1],
                           delay: featureIndex * 0.2
                         }}
                       />

@@ -71,7 +71,7 @@ export default function BenefitsSection() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: [0.25, 0.46, 0.45, 0.94]
       }
     }
   } as const;
@@ -88,7 +88,7 @@ export default function BenefitsSection() {
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: [0.25, 0.46, 0.45, 0.94]
       }
     }
   } as const;
@@ -146,7 +146,7 @@ export default function BenefitsSection() {
                 transition={{
                   duration: 3,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: [0.4, 0, 0.2, 1]
                 }}
                 style={{
                   background: 'linear-gradient(90deg, #22c55e, #16a34a, #15803d, #22c55e)',
@@ -194,7 +194,7 @@ export default function BenefitsSection() {
                     transition={{
                       duration: 2,
                       repeat: Infinity,
-                      ease: "linear"
+                      ease: [0, 0, 1, 1]
                     }}
                   />
                   <benefit.icon className="w-8 h-8 text-green-600 relative z-10" />

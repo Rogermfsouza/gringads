@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Check, Users, Star, DollarSign, TrendingUp } from 'lucide-react';
+import { ArrowRight, Users, Star, DollarSign, TrendingUp } from 'lucide-react';
 
 export default function HeroSection() {
   const containerVariants = {
@@ -98,7 +98,7 @@ export default function HeroSection() {
             rotate: {
               duration: 6,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: [0.4, 0, 0.2, 1]
             }
           }}
           whileHover={{ 
@@ -188,7 +188,7 @@ export default function HeroSection() {
                 transition={{
                   duration: 3,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: [0.4, 0, 0.2, 1]
                 }}
                 style={{
                   background: 'linear-gradient(90deg, #22c55e, #16a34a, #15803d, #22c55e)',

@@ -26,7 +26,7 @@ export default function Footer() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
+        ease: [0.25, 0.46, 0.45, 0.94]
       }
     }
   } as const;
@@ -66,7 +66,7 @@ export default function Footer() {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: [0.4, 0, 0.2, 1]
           }}
         />
         <motion.div
@@ -80,7 +80,7 @@ export default function Footer() {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: [0.4, 0, 0.2, 1],
             delay: 2
           }}
         />

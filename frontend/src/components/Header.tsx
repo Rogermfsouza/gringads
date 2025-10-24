@@ -36,7 +36,7 @@ export default function Header() {
       height: 0,
       transition: {
         duration: 0.3,
-        ease: "easeInOut"
+        ease: [0.4, 0, 0.2, 1]
       }
     },
     open: {
@@ -44,12 +44,12 @@ export default function Header() {
       height: "auto",
       transition: {
         duration: 0.3,
-        ease: "easeInOut",
+        ease: [0.4, 0, 0.2, 1],
         staggerChildren: 0.1,
         delayChildren: 0.1
       }
     }
-  };
+  } as const;
 
   const menuItemVariants = {
     closed: {
@@ -77,7 +77,7 @@ export default function Header() {
       }}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">

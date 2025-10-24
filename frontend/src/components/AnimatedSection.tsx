@@ -19,7 +19,7 @@ export default function AnimatedSection({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       {...motionProps}
     >
       {children}
@@ -48,7 +48,7 @@ export function FloatingElement({
       transition={{
         duration: 4,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: [0.4, 0, 0.2, 1],
         delay,
       }}
     >

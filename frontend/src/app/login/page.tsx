@@ -59,7 +59,7 @@ export default function LoginPage() {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: [0.4, 0, 0.2, 1]
           }}
         />
         <motion.div
@@ -73,7 +73,7 @@ export default function LoginPage() {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: [0.4, 0, 0.2, 1],
             delay: 2
           }}
         />
@@ -87,7 +87,7 @@ export default function LoginPage() {
           transition={{
             duration: 12,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: [0.4, 0, 0.2, 1],
             delay: 4
           }}
         />
@@ -156,7 +156,7 @@ export default function LoginPage() {
                     transition={{
                       duration: 3,
                       repeat: Infinity,
-                      ease: "easeInOut"
+                      ease: [0.4, 0, 0.2, 1]
                     }}
                     style={{
                       background: 'linear-gradient(90deg, #22c55e, #16a34a, #15803d, #22c55e)',
