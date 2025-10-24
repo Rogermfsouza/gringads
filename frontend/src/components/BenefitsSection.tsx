@@ -103,10 +103,10 @@ export default function BenefitsSection() {
       rotate: 0,
       transition: {
         duration: 0.6,
-        ease: "backOut"
+        ease: [0.68, -0.55, 0.265, 1.55]
       }
     }
-  };
+  } as const;
 
   return (
     <section className="py-20 relative overflow-hidden">
