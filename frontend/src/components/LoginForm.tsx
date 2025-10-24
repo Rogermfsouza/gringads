@@ -70,7 +70,7 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
       } else if (data.user) {
         onSuccess?.()
       }
-    } catch (err) {
+    } catch {
       setError('Erro inesperado. Tente novamente.')
     } finally {
       setIsLoading(false)

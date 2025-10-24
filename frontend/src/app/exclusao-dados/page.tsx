@@ -150,7 +150,7 @@ export default function ExclusaoDados() {
                     <h4 className="font-semibold text-gray-900 mb-2">2. Por E-mail</h4>
                     <p className="text-gray-700 mb-2">Envie um e-mail para: <strong>privacidade@gringads.com</strong></p>
                     <div className="bg-white rounded p-3 text-sm text-gray-600">
-                      <strong>Assunto:</strong> "Solicitação de Exclusão de Dados"<br/>
+                      <strong>Assunto:</strong> &ldquo;Solicitação de Exclusão de Dados&rdquo;<br/>
                       <strong>Inclua:</strong> Seu e-mail cadastrado e motivo da exclusão
                     </div>
                   </div>

@@ -1,12 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Menu, X, Globe } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const { scrollY } = useScroll();
   
   const headerBackground = useTransform(
@@ -20,15 +19,6 @@ export default function Header() {
     [0, 100],
     ['blur(0px)', 'blur(10px)']
   );
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const menuVariants = {
     closed: {
@@ -195,7 +185,7 @@ export default function Header() {
           className="md:hidden overflow-hidden"
         >
           <nav className="flex flex-col space-y-4 py-4">
-            {['Início', 'Produtos', 'Mercados', 'Sobre', 'Contato'].map((item, index) => (
+            {['Início', 'Produtos', 'Mercados', 'Sobre', 'Contato'].map((item) => (
               <motion.a 
                 key={item}
                 href={`#${item.toLowerCase()}`}
