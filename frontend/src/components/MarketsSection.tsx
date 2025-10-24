@@ -80,7 +80,7 @@ export default function MarketsSection() {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: [0.23, 1, 0.320, 1]
+        ease: "easeOut"
       }
     }
   };
@@ -97,7 +97,7 @@ export default function MarketsSection() {
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: [0.23, 1, 0.320, 1]
+        ease: "easeOut"
       }
     }
   };
