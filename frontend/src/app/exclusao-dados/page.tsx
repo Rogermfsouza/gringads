@@ -140,7 +140,7 @@ export default function ExclusaoDados() {
                 <div className="space-y-4">
                   <div className="border border-green-200 rounded-lg p-4">
                     <h4 className="font-semibold text-gray-900 mb-2">1. Através da Plataforma</h4>
-                    <p className="text-gray-700 mb-2">Acesse as configurações da sua conta e selecione "Excluir Conta"</p>
+                    <p className="text-gray-700 mb-2">Acesse as configurações da sua conta e selecione &ldquo;Excluir Conta&rdquo;</p>
                     <div className="bg-white rounded p-3 text-sm text-gray-600">
                       <strong>Passo a passo:</strong> Login → Configurações → Privacidade → Excluir Conta
                     </div>
